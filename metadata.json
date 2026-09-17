@@ -1,0 +1,7 @@
+{
+  "name": "Shipment Form & Tracking Portal",
+  "description": "Password-protected shipping parcel entry form with comprehensive manifest registry, sender directory, and shipper carrier management.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
