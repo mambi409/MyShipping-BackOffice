@@ -35,8 +35,12 @@ $where = [];
 $params = [];
 
 if (!empty($search)) {
-    $where[] = "(s.tracking_number LIKE :q OR s.sender_name LIKE :q OR s.receiver_name LIKE :q OR s.receiver_city LIKE :q)";
-    $params[':q'] = "%{$search}%";
+    $where[] = "(s.tracking_number LIKE :q1 OR s.sender_name LIKE :q2 OR s.receiver_name LIKE :q3 OR s.receiver_city LIKE :q4)";
+    $qTerm = "%{$search}%";
+    $params[':q1'] = $qTerm;
+    $params[':q2'] = $qTerm;
+    $params[':q3'] = $qTerm;
+    $params[':q4'] = $qTerm;
 }
 
 if (!empty($status)) {

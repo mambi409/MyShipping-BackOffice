@@ -3,6 +3,11 @@ Options -Indexes
 
 # Allow access to image files only
 <FilesMatch "\.(jpg|jpeg|png|webp)$">
-    Order Allow,Deny
-    Allow from all
+    <IfModule mod_authz_core.c>
+        Require all granted
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order Allow,Deny
+        Allow from all
+    </IfModule>
 </FilesMatch>

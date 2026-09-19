@@ -104,6 +104,6 @@ INSERT IGNORE INTO `routes` (`code`, `name`, `default_carrier`, `estimated_days`
 -- Password is: Admin@1234 (change after first login)
 -- --------------------------------------------------------
 INSERT IGNORE INTO `users` (`id`, `username`, `full_name`, `email`, `password_hash`, `role`, `status`) VALUES
-(1, 'admin', 'System Administrator', 'admin@example.com', '$2y$10$wN4vF5lGkJwI2wZ/J1V01eE8k9H71Y.CkgJ5b.cI9p1Y2C5Z9jZ0W', 'admin', 'active');
+(1, 'admin', 'System Administrator', 'admin@example.com', '$2y$10$2KN3zpc1D7ty5sjqCsoeuOiTicN9T3Pv8g9hk/YN1aCu3z2xu20tS', 'admin', 'active');
 
 COMMIT;

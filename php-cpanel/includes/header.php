@@ -73,7 +73,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                             <i data-lucide="package-check" class="w-5 h-5"></i>
                         </div>
                         <div>
-                            <div class="text-base font-bold text-slate-900 tracking-tight leading-none group-hover:text-indigo-600 transition-colors">CargoTracker</div>
+                            <div class="text-base font-bold text-slate-900 tracking-tight leading-none group-hover:text-indigo-600 transition-colors">MyShipping CargoTracker</div>
                             <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mt-0.5">Express Logistics</div>
                         </div>
                     </a>
