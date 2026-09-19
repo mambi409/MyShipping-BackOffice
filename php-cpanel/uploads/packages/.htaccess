@@ -1,0 +1,8 @@
+# Prevent directory browsing in uploads
+Options -Indexes
+
+# Allow access to image files only
+<FilesMatch "\.(jpg|jpeg|png|webp)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
